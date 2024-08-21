@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  /* Track */
+::-webkit-scrollbar-track {
+    background-color: rgb(189, 79, 39);
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(236, 229, 229); 
+  
+  }
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #204fd0; 
+  }
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    position: sticky;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    margin-left: 10px;
+  
+}
+
+nav ul li a {
+    justify-content: space-between;
+    color: rgb(74, 8, 8);
+    margin: 20px;
+    font-size: large;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-shadow: 2px 5px 8px rgb(198, 64, 15);
+}
+
+h1 {
+    text-align: end;
+    font-size: 59px;
+    color: black;
+}
+
+span {
+    color: rgb(28, 12, 93);
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 95px;
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(79, 21, 15);
+    padding: 10px;
+    text-align: justify;
+    padding: 10px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.para {
+    background-color: rgb(217, 177, 17);
+    height: 760px;
+}
+
+.intro {
+    margin-top: 150px;
+    border-radius: 5px;
+    color: rgb(217, 226, 163);
+    background-color: rgb(217, 226, 163);
+    width: 1000px;
+    height: 300px;
+    margin-left: 250px
+}
+
+.intro p {
+    padding: 10px;
+    text-align: justify;
+    margin: 10px;
+}
+
+.intro {
+    background: linear-gradient(to top, rgb(205, 99, 23)50%, rgb(217, 226, 163)50%);
+    background-size: 100% 300%;
+    transition: all 0.6s;
+}
+
+.intro:hover {
+    background-position: right bottom;
+    box-shadow: 4px 5px 6px rgb(230, 53, 13);
+}
+
+.career {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    height: 260px;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.card {
+    height: 760px;
+    overflow: hidden;
+
+}
+
+.intro1 {
+    width: 1000px;
+    height: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: rgb(217, 177, 17);
+    height: 760px;
+}
+
+.col {
+    height: 600px;
+    width: 300px;
+    padding: 20px;
+    margin: 6px;
+    border-radius: 5%;
+    text-align: justify;
+
+
+}
+
+h2 {
+    text-align: start;
+    font-size: 20px;
+}
+
+.card :hover {
+    cursor: pointer;
+}
+
+.intro :hover {
+    cursor: pointer;
+}
+
+.btn {
+    border: 2px solid #663213;
+    background: none;
+    padding: 10px;
+    font-size: 17px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.btn1,
+.btn2 {
+    color: rgb(95, 152, 232);
+    background-color: rgb(95, 152, 232);
+}
+
+.btn1:hover,
+.btn2:hover {
+    color: rgb(16, 31, 68);
+
+}
+
+.btn ::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: rgb(73, 33, 125);
+    z-index: -1;
+    transition: 0.8s;
+    height: 180%;
+
+}
+
+.btn1 ::before,
+.btn2 ::before {
+    bottom: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn1 ::before,
+.btn2 ::before {
+    height: 180%;
+}
+
+.btn1:hover ::before,
+.btn2:hover ::before {
+    height: 180%;
+
+}
+
+
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 177, 17);
+}
+
+.container {
+    margin-top: 10px;
+    position: relative;
+    width: 1100px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.container .mycard {
+    position: relative;
+    max-width: 300px;
+    height: 160px;
+    margin: 30px 30px;
+    background-color: rgb(145, 51, 20);
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 50px rgb(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+}
+
+.container .mycard:hover {
+    height: 450px;
+
+}
+
+.container .mycard .cimg {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    left: 21px;
+    z-index: 1;
+    box-shadow: 0 4px 50px rgb(0, 0, 0, 0.5);
+}
+
+.container .mycard .cimg img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+
+}
+
+.container .mycard .cdetail {
+    position: relative;
+    margin-top: -40px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+
+}
+
+.container .mycard:hover .cdetail {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+
+}
+
+h3 {
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(74, 8, 8);
+
+}
+
+.cdetail p {
+    color: aliceblue;
+    font-family: serif;
+    font-style: unset;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.box1 h1 {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(74, 8, 8);
+    margin-left: 100px;
+    font-size: 45px;
+}
+
+.button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    border-radius: 5px;
+    border-color: black;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+    background-color: rgb(118, 3, 3);
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px;
+}
+
+.container1 {
+    height: 460px;
+    cursor: pointer;
+}
+
+h6 {
+    font-size: 45px;
+    color: rgb(79, 21, 15);
+    text-align: center;
+}
+
+.cimg1 img {
+    width: 300px;
+    height: 200px;
+}
+
+.cdetail1 a {
+    text-decoration: none;
+}
+
+.container1 .mycard1 {
+    transition: 0.4s ease-in-out;
+    height: 260px;
+}
+
+.container1 .mycard1:hover {
+    height: 100px;
+
+}
+
+.container1 .mycard1 .cimg1 {
+    z-index: 1;
+
+}
+
+
+.container1 .mycard1 .cimg1 img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+
+}
+
+.container1 .mycard1 .cdetail1 {
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    margin-top: -150px;
+}
+
+.container1 .mycard1:hover .cdetail1 {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 30px;
+    margin-top: -50px;
+}
+
+.cdetail1 p {
+    font-size: 17px;
+}
+
+.contact {
+    margin-top: center;
+    margin-bottom: center;
+    margin-top:400px;
+    height: 900px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.contact-text{
+    height: 0px;
+margin-top: 100px;
+height: 500px;
+}
+
+.contact-text h2 {
+    margin-top: 400px;
+    justify-items: center;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(79, 21, 15);
+}
+
+form {
+    width: 500px;
+    margin-left: 500px;
+}
+
+.input {
+    width: 100%;
+    margin-left: 10px;
+}
+
+button {
+    color: rgb(231, 240, 247);
+    background-color: black;
+    height: 50px;
+}
+
+
+.connect1 {
+    height: 460px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.connect1 h2 {
+    margin-top: 400px;
+    justify-items: center;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(79, 21, 15);
+}
+
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    color: rgb(7, 6, 45);
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 30px;
+    margin-right: 45px;
+    transition: all .45s ease;
+    margin-left: 40px;
+}
+
+.connect1 {
+    height: 460px;
+    cursor: pointer;
+   margin-bottom: 50px;
+}
+
+.connect1 h2 {
+    margin-top: 400px;
+    justify-items: center;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(79, 21, 15);
+}
+
+.container3{
+    height: 460px;
+    cursor: pointer;
+}
+
+.container2{
+    height: 460px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    nav{
+        width: 600px;
+        background-color: rgb(173, 23, 148);
+        padding: 0;
+        text-align: justify;
+    }
+
+    .row{
+        background-color: rgb(134, 134, 14);
+        width: 600px;
+        height: 1000px;
+       display: flex;
+       flex-direction: column;
+    }
+
+    .main{
+        width: 600px;
+        }
+
+    .col-3{
+            height: 500px;
+            width: 600px;
+            border: 3px solid red;
+            margin: 10px;
+        }
+}
+
